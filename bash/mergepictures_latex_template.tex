@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage[font=large]{caption}
+\usepackage{tikz}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{grffile}
+\usepackage{enumerate}
+\usepackage{pifont}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{float}
+\usepackage{rotating}
+\usepackage{subfigure}
+\usepackage{afterpage}
+\usepackage{epsfig}
+\usepackage{placeins}
+\usepackage{lscape}
+\usepackage{comment}
+\usepackage{multirow}
+\graphicspath{{../../pics/}}
+
+\textwidth=17cm
+\textheight=22cm
+\topmargin=-1cm
+\evensidemargin=0cm
+\oddsidemargin=0cm
+
+
+\begin{document}
+
+{\huge Cohpi+ in DUNE}\\
+
+\thispagestyle{empty}
+
+\listoffigures
+
+\clearpage
+
+\pagenumbering{arabic}
+
+
+\foreach \picname in {filenamelist}
+         { 
+           \begin{figure}[htb]
+             \includegraphics[width=0.9\textwidth]{\picname}
+             \caption{ \picname}
+           \end{figure}
+           \clearpage
+           }
+\end{document}
